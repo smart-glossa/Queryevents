@@ -3,9 +3,9 @@
 	<script>
 		
 		window.addEventListener("keydown", function(event) {
-  let str = "smart thinking: key='" + event.key + "' | code='" +
+  var str = "smart thinking: key='" + event.key + "' | code='" +
             event.code + "'";
-  let el = document.createElement("span");
+  var el = document.createElement("span");
   el.innerHTML = str + "<br/>";
  
   document.getElementById("output").appendChild(el);
