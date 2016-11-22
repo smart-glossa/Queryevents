@@ -14,7 +14,7 @@ CREATE TABLE `register` (
 
 step=4:
 aletr table:
-query: alter table register=gender varchar(50);
+query: alter table register add=gender varchar(50);
 
 
 step=5;select * from register;
