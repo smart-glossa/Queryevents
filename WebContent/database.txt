@@ -13,7 +13,7 @@ CREATE TABLE `register` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
 step=4:
-aletr table:
+aleter table:
 query: alter table register add=gender varchar(50);
 
 
@@ -70,7 +70,30 @@ use foreign key
 step=2:join two tables;
 query:-select * from register,login;
 
-
++--------+----------+------+------+--------+-----+--------------+------+
+| userId | username | pass | afe  | gender | uId | username     | pass |
++--------+----------+------+------+--------+-----+--------------+------+
+|      1 | selvi    | 123  | 20   | female |   1 | selvi        | 123  |
+|      2 | selvi    | 123  | 20   | NULL   |   1 | selvi        | 123  |
+|      1 | selvi    | 123  | 20   | NULL   |   1 | selvi        | 123  |
+|      1 | selvi    | 123  | 20   | female |   1 | selvi        | 123  |
+|      1 | selvi    | 123  | 20   | female |   2 | selvi        | 123  |
+|      2 | selvi    | 123  | 20   | NULL   |   2 | selvi        | 123  |
+|      1 | selvi    | 123  | 20   | NULL   |   2 | selvi        | 123  |
+|      1 | selvi    | 123  | 20   | female |   2 | selvi        | 123  |
+|      1 | selvi    | 123  | 20   | female |   3 | suganya      | 234  |
+|      2 | selvi    | 123  | 20   | NULL   |   3 | suganya      | 234  |
+|      1 | selvi    | 123  | 20   | NULL   |   3 | suganya      | 234  |
+|      1 | selvi    | 123  | 20   | female |   3 | suganya      | 234  |
+|      1 | selvi    | 123  | 20   | female |   4 | lakshmiselvi | 345  |
+|      2 | selvi    | 123  | 20   | NULL   |   4 | lakshmiselvi | 345  |
+|      1 | selvi    | 123  | 20   | NULL   |   4 | lakshmiselvi | 345  |
+|      1 | selvi    | 123  | 20   | female |   4 | lakshmiselvi | 345  |
+|      1 | selvi    | 123  | 20   | female |   5 | soni         | 567  |
+|      2 | selvi    | 123  | 20   | NULL   |   5 | soni         | 567  |
+|      1 | selvi    | 123  | 20   | NULL   |   5 | soni         | 567  |
+|      1 | selvi    | 123  | 20   | female |   5 | soni         | 567  |
++--------+----------+------+------+--------+-----+--------------+------+
 
 
 
