@@ -1,0 +1,77 @@
+                 Table=1
+step=1:
+create database suganya:
+step=2
+use suganya;
+step=3:
+CREATE TABLE `register` (
+  `userId` int(11) default NULL,
+  `username` varchar(50) default NULL,
+  `pass` varchar(50) default NULL,
+  `afe` varchar(50) default NULL,
+  `gender` varchar(50) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+step=4:
+aletr table:
+query: alter table register=gender varchar(50);
+
+
+step=5;select * from register;
+
+--------+----------+------+------+--------+
+ userId | username | pass | afe  | gender |
+--------+----------+------+------+--------+
+      1 | selvi    | 123  | 20   | female |
+      2 | selvi    | 123  | 20   | NULL   |
+      1 | selvi    | 123  | 20   | NULL   |
+      1 | selvi    | 123  | 20   | female |
+--------+----------+------+------+--------+
+
+
+                   Table=2; 
+
+step=1: 
+
+CREATE TABLE `login` (
+  `uId` int(11) NOT NULL auto_increment,
+  `username` varchar(50) default NULL,
+  `pass` varchar(50) default NULL,
+  PRIMARY KEY  (`uId`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1
+
+step=2:
+
++-----+--------------+------+
+| uId | username     | pass |
++-----+--------------+------+
+|   1 | selvi        | 123  |
+|   2 | selvi        | 123  |
+|   3 | suganya      | 234  |
+|   4 | lakshmiselvi | 345  |
+|   5 | soni         | 567  |
++-----+--------------+------+
+
+             Table=3;
+
+CREATE TABLE `employee` (
+  `empId` int(11) NOT NULL,
+  `uId` int(11) default NULL,
+  `name` varchar(50) default NULL,
+  `fk_department` int(4) NOT NULL,
+  KEY `uId` (`uId`),
+  CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`uId`) REFERENCES `login` (`uId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+use foreign key
+
+
+
+step=2:join two tables;
+query:-select * from register,login;
+
+
+
+
+
+
