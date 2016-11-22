@@ -1,0 +1,20 @@
+<html>
+<body>
+<input type="text" id="name" onkeyup="must()">
+<input type="password" id="pass" onkeydown="reader()">
+<script>
+function must(){
+var a=document.getElementById("name");
+a.style.backgroundColor="red";
+a.style.color="yellow";
+}
+
+function reader(){
+var a=document.getElementById("pass");
+a.style.backgroundColor="pink";
+a.style.color="white";
+}
+
+</script>
+</body>
+</html>

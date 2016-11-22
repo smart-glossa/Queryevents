@@ -63,7 +63,8 @@ CREATE TABLE `employee` (
   CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`uId`) REFERENCES `login` (`uId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
 
-use foreign key
+use foreign key;
+
 
 
 
